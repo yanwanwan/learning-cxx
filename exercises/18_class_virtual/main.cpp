@@ -85,3 +85,6 @@ int main(int argc, char **argv) {
 
 // READ: 扩展阅读-纯虚、抽象 <https://zh.cppreference.com/w/cpp/language/abstract_class>
 // READ: 扩展阅读-虚继承 <https://zh.cppreference.com/w/cpp/language/derived_class>
+// READ: 扩展阅读-纯虚、抽象 <https://zh.cppreference.com/w/cpp/language/abstract_class>
+// READ: 扩展阅读-虚继承 <https://zh.cppreference.com/w/cpp/language/derived_class>// READ: 扩展阅读-纯虚、抽象 <https://zh.cppreference.com/w/cpp/language/abstract_class>
+// READ: 扩展阅读-虚继承 <https://zh.cppreference.com/w/cpp/language/derived_class>
