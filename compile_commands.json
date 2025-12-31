@@ -1,0 +1,16 @@
+[
+{
+  "directory": "/mnt/d/code/learning-cxx",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-O3", "-std=c++17", "-finput-charset=UTF-8", "-fexec-charset=UTF-8", "-DNDEBUG", "-pthread", "-o", "build/.objs/summary/linux/x86_64/release/learn/summary.cpp.o", "learn/summary.cpp"],
+  "file": "learn/summary.cpp"
+},
+{
+  "directory": "/mnt/d/code/learning-cxx",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-O3", "-std=c++17", "-D__XMAKE__=\"/mnt/d/code/learning-cxx\"", "-finput-charset=UTF-8", "-fexec-charset=UTF-8", "-DNDEBUG", "-pthread", "-o", "build/.objs/test/linux/x86_64/release/learn/test.cpp.o", "learn/test.cpp"],
+  "file": "learn/test.cpp"
+},
+{
+  "directory": "/mnt/d/code/learning-cxx",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-O3", "-std=c++17", "-finput-charset=UTF-8", "-fexec-charset=UTF-8", "-DNDEBUG", "-pthread", "-o", "build/.objs/learn/linux/x86_64/release/learn/learn.cpp.o", "learn/learn.cpp"],
+  "file": "learn/learn.cpp"
+}]
