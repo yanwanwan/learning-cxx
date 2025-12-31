@@ -4,8 +4,12 @@
 
 struct Fibonacci {
     int numbers[11];
+    
     // TODO: 修改方法签名和实现，使测试通过
-    int get(int i) {
+    // 1. 在参数列表后添加 const 关键字
+    // 2. 返回数组中的元素
+    int get(int i) const {
+        return numbers[i];
     }
 };
 
