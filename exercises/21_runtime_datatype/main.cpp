@@ -11,6 +11,7 @@ enum class DataType {
 struct TaggedUnion {
     DataType type;
     // NOTICE: struct/union 可以相互任意嵌套。
+    // union 的特性：f 和 d 共用同一块内存空间。
     union {
         float f;
         double d;
@@ -18,13 +19,27 @@ struct TaggedUnion {
 };
 
 // TODO: 将这个函数模板化用于 sigmoid_dyn
-float sigmoid(float x) {
+template <typename T>
+T sigmoid(T x) {
     return 1 / (1 + std::exp(-x));
 }
 
 TaggedUnion sigmoid_dyn(TaggedUnion x) {
     TaggedUnion ans{x.type};
+    
     // TODO: 根据 type 调用 sigmoid
+    // 运行时分发 (Runtime Dispatch)
+    switch (x.type) {
+        case DataType::Float:
+            // 访问 union 的 float 成员
+            ans.f = sigmoid(x.f); 
+            break;
+        case DataType::Double:
+            // 访问 union 的 double 成员
+            ans.d = sigmoid(x.d);
+            break;
+    }
+    
     return ans;
 }
 
